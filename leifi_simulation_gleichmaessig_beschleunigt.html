@@ -78,6 +78,8 @@ input[type=text].LEIFI_text{border-radius:0;font-family:sans-serif;font-size:12p
 @media(max-width:575.98px){.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .btn,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button-span a,.button-span .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_weblinks form .button,.frontend_topic_weblinks form .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_weblinks .add_weblink_button .button,.frontend_topic_weblinks .add_weblink_button .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_downloads form .button,.frontend_topic_downloads form .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_downloads .add_weblink_button .button,.frontend_topic_downloads .add_weblink_button .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .branch_body .branch_topics .mobile-hyperlink a,.branch_body .branch_topics .mobile-hyperlink .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper input:not(.LEIFI_button):not(.btn-outline-primary)[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .form-control[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .paragraphs-subform .js-form-type-entity-autocomplete input[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete .ajax-new-content>div>div .paragraphs-dropbutton-wrapper input[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper textarea[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .sticky-choices a,.sticky-choices .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a{width:100%}
 body .anim_display.animation_infos .LEIFI_animation{border:1px solid rgba(0,0,0,0)}
 body{margin:10px;background:#fff;font-family:sans-serif}
+.LEIFI_animation{transform:none;margin:0 auto}
+#sim_rahmen{margin:0 auto;overflow:visible}
 #sim_wrap{transform-origin:top left}
 #sim_wrap input{image-rendering:auto}
 .LEIFI_animation{background-color:#efefef;border:1px solid #ccc}
@@ -862,5 +864,20 @@ function holeAchseHorizontalx (A, x) {
 
 <p style="font:11px sans-serif;color:#999;margin:4px 0">Simulation (LEIFIphysik, Th. Unkelbach) &ndash; LEIFIphysik / Th. Unkelbach</p>
 
+<script>
+// Automatische Skalierung auf die Fensterbreite (CSS zoom, layouttreu)
+function fitSimBreite(){
+  var sim = document.querySelector('.LEIFI_animation');
+  if(!sim) return;
+  var verfuegbar = Math.max(320, document.documentElement.clientWidth - 20);
+  var s = Math.min(1, verfuegbar / 903);
+  sim.style.zoom = s;
+  // Rechtsbuendige Breite im Fluss begrenzen, damit keine Scrollleiste entsteht
+  document.body.style.overflowX = 'hidden';
+}
+window.addEventListener('resize', fitSimBreite);
+window.addEventListener('load', fitSimBreite);
+fitSimBreite();
+</script>
 </body>
 </html>
