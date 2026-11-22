@@ -11,18 +11,11 @@
   entfernt wird.
 -->
 <style>
-@media(prefers-reduced-motion:reduce){.btn,.button-span a,.frontend_topic_weblinks form .button,.frontend_topic_downloads form .button,.branch_body .branch_topics .mobile-hyperlink a,.sticky-choices a,input:not(.LEIFI_button):not(.btn-outline-primary)[type=button]:not(.LEIFI_button),.form-control[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete input[type=button]:not(.LEIFI_button),.form-control:focus[type=button]:not(.LEIFI_button),textarea[type=button]:not(.LEIFI_button){transition:none}
-.h-100,.branch-class-header .branch_title .branch_logo img,.homepage-slider .slick-slider .slide-item picture,.node-collection-edit-form .field-multiple-table tbody .field-multiple-drag .tabledrag-changed.warning,.main-menu .navbar .navbar-nav>li>a,.site-footer nav,.LEIFI_mathe_rechts{height:100% !important}
-@media(max-width:575.98px){input:not(.LEIFI_button):not(.btn-outline-primary)[type=button]:not(.LEIFI_button),.form-control[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete input[type=button]:not(.LEIFI_button),.form-control:focus[type=button]:not(.LEIFI_button),textarea[type=button]:not(.LEIFI_button){width:100%}
-@media(max-width:575.98px){button.form-submit,.btn.form-submit,.button-span a.form-submit,.frontend_topic_weblinks form .form-submit.button,.frontend_topic_downloads form .form-submit.button,.branch_body .branch_topics .mobile-hyperlink a.form-submit,.sticky-choices a.form-submit,input.form-submit[type=button]:not(.LEIFI_button):not(.btn-outline-primary),.form-submit.form-control[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete input.form-submit[type=button]:not(.LEIFI_button),.form-submit.form-control[type=button]:focus:not(.LEIFI_button),textarea.form-submit[type=button]:not(.LEIFI_button){width:100%}
-@media(max-width:575.98px){.btn:not(.btn-link),.button-span a:not(.btn-link),.frontend_topic_weblinks form .button:not(.btn-link),.frontend_topic_downloads form .button:not(.btn-link),.branch_body .branch_topics .mobile-hyperlink a:not(.btn-link),.sticky-choices a:not(.btn-link),input[type=button]:not(.btn-link):not(.LEIFI_button):not(.btn-outline-primary),.form-control[type=button]:not(.btn-link):not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete input[type=button]:not(.btn-link):not(.LEIFI_button),.form-control[type=button]:not(.btn-link):focus:not(.LEIFI_button),textarea[type=button]:not(.btn-link):not(.LEIFI_button){padding:1rem .625rem}
-div.LEIFI_swiffy_animation{height:31.25rem;margin:auto;position:relative;width:100%;z-index:1}
-div.LEIFI_swiffy_container{height:100%;width:100%}
-div.LEIFI_animation{margin:auto;position:relative;transform:scale(1);transform-origin:top left;z-index:1}
+body{margin:10px;background:#fff;font-family:sans-serif}
+div.LEIFI_animation{margin:auto;position:relative;background-color:#efefef;border:1px solid #ccc}
 div.LEIFI_leinwand{background-color:inherit;position:absolute}
 div.LEIFI_steuerung{background-color:rgba(0,0,0,0);position:absolute;text-align:center}
 div.LEIFI_2knoepfe{margin:5px auto;position:relative;width:60px}
-div.LEIFI_3knoepfe{margin:5px auto;position:relative;width:90px}
 input.LEIFI_knopf_links{border:1px solid rgba(0,0,0,.4);float:left;height:auto;width:30px}
 input.LEIFI_knopf_mitte{height:auto;margin-left:auto;margin-right:auto;width:30px}
 input.LEIFI_knopf_rechts{float:right;height:auto;width:30px}
@@ -30,59 +23,13 @@ div.LEIFI_parameter{position:absolute}
 div.LEIFI_parameter div{position:absolute;text-align:center}
 span.LEIFI_span_zentriert{font-family:sans-serif;font-size:12px;font-weight:bold;margin-left:10px;position:absolute;text-align:center;white-space:nowrap}
 span.LEIFI_span{font-family:sans-serif;font-size:12px;font-weight:bold;margin-left:10px;position:absolute;text-align:left;white-space:nowrap}
-input[type=range].LEIFI_range::-ms-tooltip{display:none}
 input[type=range].LEIFI_range{-webkit-appearance:none;background:rgba(0,0,0,0);border:0;margin:0 0 0 10px;position:absolute;width:100%;z-index:2}
 input[type=range].LEIFI_range:focus{outline:none}
 input[type=range].LEIFI_range::-webkit-slider-runnable-track{background:hsl(281,48.7%,30.6%);border:0;border-radius:0;box-shadow:none;cursor:pointer;height:.3rem;width:100%}
-input[type=range].LEIFI_range::-webkit-slider-thumb{-webkit-appearance:none;background-color:hsl(281,48.7%,30.6%);background-position:50%;background-repeat:no-repeat;background-size:1.5rem;border:0;border-radius:50%;box-shadow:none;cursor:pointer;height:1rem;margin-top:-0.35rem;width:1rem;z-index:2}
-input[type=range].LEIFI_range::-webkit-slider-thumb:focus{background:hsl(281,48.7%,30.6%)}
-input[type=range].LEIFI_range::-moz-range-track{background:hsl(281,48.7%,30.6%);border:0;border-radius:0;box-shadow:none;cursor:pointer;height:.3rem;width:100%}
-input[type=range].LEIFI_range::-moz-range-thumb{background-color:hsl(281,48.7%,30.6%);background-position:50%;background-repeat:no-repeat;background-size:1.5rem;border:0;border-radius:50%;box-shadow:none;cursor:pointer;height:1rem;width:1rem}
-input[type=range].LEIFI_range::-ms-track{background:rgba(0,0,0,0);border-color:rgba(0,0,0,0);border-width:1rem 0;color:rgba(0,0,0,0);cursor:pointer;height:.3rem;width:100%}
-input[type=range].LEIFI_range::-ms-fill-lower{background:hsl(281,48.7%,30.6%);border:0;border-radius:0;box-shadow:none}
-input[type=range].LEIFI_range::-ms-fill-upper{background:hsl(281,48.7%,30.6%);border:0;border-radius:0;box-shadow:none}
-input[type=range].LEIFI_range::-ms-thumb{background-color:hsl(281,48.7%,30.6%);background-position:50%;background-repeat:no-repeat;background-size:1.5rem;border:0;border-radius:50%;box-shadow:none;cursor:pointer;height:1rem;margin-top:0;width:1rem}
-input[type=range].LEIFI_range:focus::-ms-fill-lower{background:hsl(281,48.7%,30.6%)}
-input[type=checkbox].LEIFI_checkbox{margin-left:10px}
-input[type=button].LEIFI_button{font-family:sans-serif;font-size:12px;font-weight:bold;margin-left:10px;position:absolute;text-align:center;white-space:nowrap}
-button.LEIFI_button{background-color:#ccc;border-radius:0;font-family:sans-serif;font-size:12px;font-weight:bold;height:30px;margin-left:10px}
-input[type=radio].LEIFI_radio{margin-left:10px}
-label.LEIFI_label{font-family:sans-serif;font-size:12px;font-weight:bold;margin-left:5px;vertical-align:2px;white-space:nowrap}
-select.LEIFI_select{border-radius:0;font-family:sans-serif;font-size:12px;font-weight:bold;height:20px;margin-left:10px;margin-top:-3.5px;position:absolute}
-input[type=text].LEIFI_text{border-radius:0;font-family:sans-serif;font-size:12px;font-weight:bold;height:16px;margin-left:10px;margin-top:-3.5px;padding-left:2px;position:absolute}
-.LEIFI_animation,.LEIFI_swiffy_animation{background-color:#efefef}
-.LEIFI_mathe_hintergrund{margin:0 auto !important}
-.LEIFI_mathe_rechts{overflow-y:scroll}
-.LEIFI_mathe_rechts::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.4)}
-.LEIFI_mathe_rechts::-webkit-scrollbar{width:.25rem}
-@media(min-width:576px){.animation-1col-width div.LEIFI_swiffy_animation{height:200px;width:300px}
-@media(min-width:768px){.animation-1col-width div.LEIFI_swiffy_animation{height:400px;width:500px}
-@media(min-width:992px){.animation-1col-width div.LEIFI_swiffy_animation{height:500px;width:800px}
-@media(min-width:576px){.animation-2col-width div.LEIFI_swiffy_animation{height:240px;width:280px}
-@media(min-width:768px){.animation-2col-width div.LEIFI_swiffy_animation{height:300px;width:400px}
-@media(min-width:992px){.animation-2col-width div.LEIFI_swiffy_animation{height:300px;width:400px}
-@media(min-width:576px){.animation-3col-width div.LEIFI_swiffy_animation{height:240px;width:280px}
-@media(min-width:768px){.animation-3col-width div.LEIFI_swiffy_animation{height:300px;width:400px}
-@media(min-width:992px){.animation-3col-width div.LEIFI_swiffy_animation{height:300px;width:400px}
-@media(min-width:576px){.view-themenbereich-animation-downloads div.LEIFI_swiffy_animation,.view-themenbereich-animation-downloads .LEIFI_animation{height:208px;width:300px}
-@media(min-width:768px){.view-themenbereich-animation-downloads div.LEIFI_swiffy_animation,.view-themenbereich-animation-downloads .LEIFI_animation{height:208px;width:300px}
-@media(min-width:992px){.view-themenbereich-animation-downloads div.LEIFI_swiffy_animation,.view-themenbereich-animation-downloads .LEIFI_animation{height:208px;width:300px}
-@media(min-width:576px){.anim_content div.LEIFI_swiffy_animation{height:350px;width:100%}
-@media(min-width:768px){.anim_content div.LEIFI_swiffy_animation{height:400px;width:500px}
-@media(min-width:992px){.anim_content div.LEIFI_swiffy_animation{height:500px;width:800px}
-.LEIFI_animaton_phet{height:200px !important;margin:0 auto 2em;width:100% !important;max-width:300px;z-index:1}
-@media(min-width:576px){.LEIFI_animaton_phet{height:200px !important;max-width:300px}
-@media(min-width:768px){.LEIFI_animaton_phet{height:400px !important;max-width:600px}
-@media(min-width:992px){.LEIFI_animaton_phet{height:600px !important;max-width:880px}
-.LEIFI_animaton_g_web{min-height:400px;min-width:300px;width:100%;z-index:1}
-@media(max-width:575.98px){.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .btn,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button-span a,.button-span .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_weblinks form .button,.frontend_topic_weblinks form .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_weblinks .add_weblink_button .button,.frontend_topic_weblinks .add_weblink_button .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_downloads form .button,.frontend_topic_downloads form .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .frontend_topic_downloads .add_weblink_button .button,.frontend_topic_downloads .add_weblink_button .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .button,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .branch_body .branch_topics .mobile-hyperlink a,.branch_body .branch_topics .mobile-hyperlink .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a,.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper input:not(.LEIFI_button):not(.btn-outline-primary)[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .form-control[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .paragraphs-subform .js-form-type-entity-autocomplete input[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td:nth-child(2) .paragraphs-subform .js-form-type-entity-autocomplete .ajax-new-content>div>div .paragraphs-dropbutton-wrapper input[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper textarea[type=button]:not(.LEIFI_button),.node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper .sticky-choices a,.sticky-choices .node-collection-edit-form .field-multiple-table tbody .draggable td .ajax-new-content>div>div .paragraphs-dropbutton-wrapper a{width:100%}
-body .anim_display.animation_infos .LEIFI_animation{border:1px solid rgba(0,0,0,0)}
-body{margin:10px;background:#fff;font-family:sans-serif}
-.LEIFI_animation{transform:none;margin:0 auto}
-#sim_rahmen{margin:0 auto;overflow:visible}
-#sim_wrap{transform-origin:top left}
-#sim_wrap input{image-rendering:auto}
-.LEIFI_animation{background-color:#efefef;border:1px solid #ccc}
+input[type=range].LEIFI_range::-webkit-slider-thumb{-webkit-appearance:none;background-color:hsl(281,48.7%,30.6%);border:0;border-radius:50%;box-shadow:none;cursor:pointer;height:1rem;margin-top:-.35rem;width:1rem}
+input[type=range].LEIFI_range::-moz-range-track{background:hsl(281,48.7%,30.6%);border:0;box-shadow:none;cursor:pointer;height:.3rem;width:100%}
+input[type=range].LEIFI_range::-moz-range-thumb{background-color:hsl(281,48.7%,30.6%);border:0;border-radius:50%;box-shadow:none;cursor:pointer;height:1rem;width:1rem}
+#sim_rahmen{margin:0 auto}
 </style>
 </head>
 <body>
@@ -870,7 +817,7 @@ function fitSimBreite(){
   var sim = document.querySelector('.LEIFI_animation');
   if(!sim) return;
   var verfuegbar = Math.max(320, document.documentElement.clientWidth - 20);
-  var s = Math.min(1, verfuegbar / 903);
+  var s = Math.min(1.8, verfuegbar / 903);
   sim.style.zoom = s;
   // Rechtsbuendige Breite im Fluss begrenzen, damit keine Scrollleiste entsteht
   document.body.style.overflowX = 'hidden';
